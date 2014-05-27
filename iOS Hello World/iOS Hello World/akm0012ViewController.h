@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface akm0012ViewController : UIViewController
+- (IBAction)buttonPressed:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
 @end

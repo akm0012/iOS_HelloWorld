@@ -18,12 +18,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    // First thing that gets called when the view is loaded
+    // Used to set initial values, etc.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    // This gets called when memory is low
+    // Not going to use this semester 
 }
 
+- (IBAction)buttonPressed:(UIButton *)sender {
+    NSString *title = [sender titleForState:UIControlStateNormal];
+    
+    NSString *plainText = [NSString stringWithFormat:@"%@ button pressed", title];
+    
+    //_statusLabel.text = plainText;
+}
 @end
